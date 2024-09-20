@@ -49,11 +49,11 @@ class Biblioteca:
 
     def agregar_libro(self, libro):
         self.__libros.append(libro)
-        print(f"El libro '{libro.titulo}' ha sido agregado a la biblioteca.")
+        print(f"El libro '{libro.titulo}' de autor '{libro.autor}' e ISBN '{libro.isbn}' ha sido agregado a la biblioteca.")
 
     def registrar_usuario(self, usuario):
         self.__usuarios.append(usuario)
-        print(f"El usuario '{usuario.nombre}' ha sido registrado en la biblioteca.")
+        print(f"El usuario '{usuario.nombre}' con ID '{usuario.id_usuario}' ha sido registrado en la biblioteca.")
 
     def prestar_libro(self, id_usuario, isbn):
         usuario = next((u for u in self.__usuarios if u.id_usuario == id_usuario), None)

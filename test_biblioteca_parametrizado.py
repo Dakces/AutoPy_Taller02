@@ -49,12 +49,15 @@ def test_no_agregar_libro(biblioteca, titulo, autor, isbn):
     if libro.titulo == "El Quijote":
         #Modificar titulo del libro agregado
         libro.titulo = "El retrato de Dorian Gray"
+        print(f"El libro titulado '{libro.titulo}' no ha sido agregado a la biblioteca.")
     elif libro.autor == "Paulo Cohello":
         #Modificar autor del libro agregado
         libro.autor = "Anonimo"
+        print(f"Un libro de autor '{libro.autor}' no ha sido agregado a la biblioteca.")
     elif libro.isbn == "879-86":
         #Modificar isbn del libro agregado
         libro.isbn = "879-88"
+        print(f"Un libro con ISBN '{libro.isbn}' no ha sido agregado a la biblioteca.")
     assert libro not in biblioteca.obtener_libros()
 
 #Registrar usuario en la biblioteca
@@ -72,9 +75,11 @@ def test_no_registrar_usuario(biblioteca, nombre, id_usuario):
     if usuario.nombre == "Juan Perez":
         #Modificar nombre de usuario
         usuario.nombre = "Pancho Lopez"
-    elif usuario.id_usuario == 2:
+        print(f"El usuario '{usuario.nombre}' no ha sido agregado")
+    elif usuario.nombre == "Andre Cabrera":
         #Modificar id de usuario
         usuario.id_usuario = 4
+        print(f"Un usuario con ID '{usuario.id_usuario}' no ha sido agregado")
     assert usuario not in biblioteca.obtener_usuarios()
 
 #Prestar libro satisfactoriamente
