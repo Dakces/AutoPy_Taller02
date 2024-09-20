@@ -9,4 +9,4 @@ Taller02
 7. Abrir el directorio en el cual se creó el reporte HTML
 8. Abrir el reporte en el navegador de preferencia y revisar las pruebas realizadas
 
-Importante: Considerar que si en la ruta del directorio se tienen espacios en blanco o caracteres especiales, se producirá un conflicto con el Environmente, lo cual provocará que no se puedan visualizar los resultados del reporte.
+Importante: Considerar que, si en la ruta del directorio se tienen espacios en blanco o caracteres especiales, se producirá un conflicto con el Environment, lo cual provocará que no se puedan visualizar los resultados del reporte correctamente.
